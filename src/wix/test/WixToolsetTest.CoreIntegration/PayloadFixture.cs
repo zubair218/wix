@@ -201,7 +201,7 @@ namespace WixToolsetTest.CoreIntegration
             }
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void CanBuildBundleWithRemotePackagePaylod()
         {
             var folder = TestData.Get(@"TestData");

@@ -53,7 +53,7 @@ namespace WixToolsetTest.CoreIntegration
             }
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void PopulatesBAManifestWithPackageInformation()
         {
             var folder = TestData.Get(@"TestData");
@@ -98,7 +98,7 @@ namespace WixToolsetTest.CoreIntegration
             }
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void PopulatesBAManifestWithPayloadInformation()
         {
             var folder = TestData.Get(@"TestData");
@@ -144,7 +144,7 @@ namespace WixToolsetTest.CoreIntegration
             }
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void CanBuildBundleManifestWithNormalizedRelatedBundles()
         {
             var folder = TestData.Get(@"TestData");
@@ -342,7 +342,7 @@ namespace WixToolsetTest.CoreIntegration
             }
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void PopulatesManifestWithExePackages()
         {
             var folder = TestData.Get(@"TestData");

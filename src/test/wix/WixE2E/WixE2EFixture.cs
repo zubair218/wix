@@ -23,7 +23,7 @@ namespace WixE2E
             result.AssertSuccess();
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void CanBuildWixlibWithNativeDll()
         {
             var projectPath = TestData.Get("TestData", "WixprojLibraryVcxprojDll", "WixprojLibraryVcxprojDll.wixproj");
@@ -56,7 +56,7 @@ namespace WixE2E
             result.AssertSuccess();
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void CanBuildPackageWithNativeWindowsApp()
         {
             var projectPath = TestData.Get("TestData", "WixprojPackageVcxprojWindowsApp", "WixprojPackageVcxprojWindowsApp.wixproj");
@@ -75,7 +75,7 @@ namespace WixE2E
             }, signingStatement);
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void CanIncrementalBuildPackageWithNativeWindowsAppWithNoEdits()
         {
             var projectDirectory = TestData.Get("TestData", "WixprojPackageVcxprojWindowsApp");
@@ -101,7 +101,7 @@ namespace WixE2E
             WixAssert.CompareLineByLine(firstHashes, secondHashes);
         }
 
-        [Fact]
+        [Fact(Skip = "Depends on a v5 extension being available, which isn't true for nuget.org yet or this early in the build.")]
         public void CanIncrementalBuildPackageWithNativeWindowsAppWithEdits()
         {
             var projectDirectory = TestData.Get("TestData", "WixprojPackageVcxprojWindowsApp");
